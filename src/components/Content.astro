@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations, type LocaleType } from "../i18n";
 import type { Experience } from "../types/Exprience";
 import type { Project } from "../types/Project";
@@ -11,10 +12,13 @@ const experience = t("info.experience") as Experience[];
 const projects = (t("info.projects") as Project[]).filter(
   (x) => x.active && x.pinned
 );
+
+
+const projectsUrl = getRelativeLocaleUrl(Astro.currentLocale ?? 'en', "projects");
 ---
 
-<div class="flex flex-col gap-20 mb-20 w-full">
-  <p id="about" class="md:p-4 w-full" set:html={t("info.resume.text")} />
+<div class="flex flex-col gap-24 mb-20 w-full">
+  <p id="about" class="md:px-4 w-full" set:html={t("info.resume.text")} />
 
   <div id="experience" class="flex flex-col gap-4">
     {experience.map((exp) => <ExperienceCard {...exp} />)}
@@ -22,5 +26,6 @@ const projects = (t("info.projects") as Project[]).filter(
 
   <div id="projects" class="flex flex-col gap-4">
     {projects.map((pro) => <ProjectCard {...pro} />)}
+    <a href={projectsUrl} class="hover:text-emphasis-text-color text-sm">{t("see_more")}</a>
   </div>
 </div>

@@ -1,20 +1,25 @@
 {
   "resume": {
     "name": "Adrián Rodríguez",
-    "position": "Ingeniero informático y desarrollador web",
-    "description": "I build pixel-perfect, engaging, and accessible digital experiences.",
+    "position": "Ingeniero Informático • Desarrollador Fullstack",
+    "description": "✨ Creando bugs desde 1997",
     "text": "Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio.\n\n    My main focus these days is building accessible user interfaces for our customers at Klaviyo. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.\nWhen I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds."
   },
   "social_links": [
     {
       "name": "Github",
-      "url": "https://twitter.com/adrnrodriguez",
-      "icon": "fab fa-twitter"
+      "url": "https://github.com/keyboard97",
+      "icon": "/src/assets/icons/github.svg"
     },
     {
       "name": "LinkedIn",
-      "url": "https://twitter.com/adrnrodriguez",
-      "icon": "fab fa-twitter"
+      "url": "https://www.linkedin.com/in/arodriguez797/",
+      "icon": "/src/assets/icons/linkedin.svg"
+    },
+    {
+      "name": "Mail",
+      "url": "mailto:adrianrdguez87@gmail.com",
+      "icon": "/src/assets/icons/mail.svg"
     }
   ],
   "experience": [
@@ -32,17 +37,9 @@
         "React",
         "Nextjs",
         ".Net",
-        "Vuejs"
+        "Vuejs",
+        "Git"
       ]
-    },
-    {
-      "start_date": "02/2022",
-      "end_date": "09/2022",
-      "title": "Tecnomática",
-      "position": "Desarrollador Fullstack",
-      "description": "Participé en el desarrollo y mantenimiento del sistema SISCONT6. Sistema contable utilizado por todas las empresas subordinadas al Ministerio de Energía y Minas en Cuba.",
-      "link": "https://tecnomatica.cupet.cu/",
-      "badges": ["Typescript", "Angular", "Java", "Spring Boot", "HTML"]
     },
     {
       "start_date": "04/2022",
@@ -51,22 +48,33 @@
       "position": "Desarrollador Frontend",
       "description": "Participé en el desarrollo del sistema RegConst, utilizado para todas las tareas de registro y gestión de trabajadores empleado por la empresa y las empresas subordinadas al Ministerio de la Construcción en Cuba.",
       "link": "https://www.aicros.cu/",
-      "badges": ["Typescript", "Angular"]
+      "badges": ["Typescript", "Angular", "Git"]
+    },
+    {
+      "start_date": "02/2022",
+      "end_date": "09/2022",
+      "title": "Tecnomática",
+      "position": "Desarrollador Fullstack",
+      "description": "Participé en el desarrollo y mantenimiento del sistema SISCONT6. Sistema contable utilizado por todas las empresas subordinadas al Ministerio de Energía y Minas en Cuba.",
+      "link": "https://tecnomatica.cupet.cu/",
+      "badges": ["Typescript", "Angular", "Java", "Spring Boot", "HTML", "Git"]
     }
   ],
   "projects": [
     {
-      "name": "StageInHome landing page",
+      "name": "Página de inicio de StageInHome",
       "link": "https://stageinhome.com/",
-      "description": "Desarrollo de landing page para la Startup StageInHome. Permite transformar espacios vacíos o anticuados en estancia acogedoras y atractivas.",
-      "image": "stageinhome.png",
-      "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact"]
+      "description": "Desarrollo de la página de inicio para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
+      "image": "/project-images/stageinhome.png",
+      "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact", "Git"],
+      "active": true,
+      "pinned": true
     },
     {
-      "name": "StageInHome App",
+      "name": "Aplicación StageInHome",
       "link": "https://app.stageinhome.com/",
-      "description": "Desarrollo de la app para la Startup StageInHome. Permite transformar espacios vacíos o anticuados en estancia acogedoras y atractivas.",
-      "image": "stageinhome.png",
+      "description": "Desarrollo de la aplicación para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
+      "image": "/project-images/app.stageinhome.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -75,14 +83,17 @@
         ".Net",
         "C#",
         "MySQL",
-        "Docker"
-      ]
+        "Docker",
+        "Git"
+      ],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "Ai Art Generator",
       "link": "https://artgeneratorai.art/",
-      "description": "Desarrollo de una aplicación web que permite generar imágenes a partir de una IA, dando la posibilidad de imprimir las imágenes en lienzos.",
-      "image": "artgenerator.png",
+      "description": "Desarrollo de una aplicación web que permite generar imágenes a partir de una IA, brindando la posibilidad de imprimir las imágenes en lienzo.",
+      "image": "/project-images/artgenerator.png",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -90,14 +101,17 @@
         "Astro",
         "React",
         ".Net",
-        "C#"
-      ]
+        "C#",
+        "Git"
+      ],
+      "active": true,
+      "pinned": true
     },
     {
-      "name": "TracksCO2 monitoring app",
+      "name": "TracksCO2 app de monitorización",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Desarrollo de una aplicación web que muestra la evolución de los niveles de CO2 en una ubicación dada, obteniendo todos los datos y parámetros de la ubicación.",
-      "image": "tracksco2.png",
+      "image": "/project-images/tracksCO2.monitoring.png",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -105,15 +119,27 @@
         "Astro",
         "React",
         ".Net",
-        "C#"
-      ]
+        "C#",
+        "Git"
+      ],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "Gestión de cargadores • SIMON",
       "link": "https://evr.simon-cloud.com/",
-      "description": "Desarrollo de una aplicación web dedicada a la gestión de cargadores para vehículos eléctricos de la empresa SIMON (www.simonelectric.com). En ella se puede obtener la información y el estado de los cargadores en tiempo real de cada cargador",
-      "image": "simon.png",
-      "technologies": ["HTML", "Tailwind", "Typescript", "Nextjs", "React"]
+      "description": "Desarrollo de una aplicación web dedicada a la gestión de cargadores para vehículos eléctricos de la empresa SIMON (www.simonelectric.com). En ella, puedes obtener información y estado de los cargadores en tiempo real para cada uno.",
+      "image": "/project-images/simon.png",
+      "technologies": [
+        "HTML",
+        "Tailwind",
+        "Typescript",
+        "Nextjs",
+        "React",
+        "Git"
+      ],
+      "active": true,
+      "pinned": true
     }
   ]
 }
