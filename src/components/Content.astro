@@ -14,7 +14,7 @@ const projects = (t("info.projects") as Project[]).filter(
 ---
 
 <div class="flex flex-col gap-20 mb-20 w-full">
-  <p id="about" class="p-4" set:html={t("info.resume.text")} />
+  <p id="about" class="md:p-4 w-full" set:html={t("info.resume.text")} />
 
   <div id="experience" class="flex flex-col gap-4">
     {experience.map((exp) => <ExperienceCard {...exp} />)}

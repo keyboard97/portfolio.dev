@@ -2,11 +2,13 @@
 
 ---
 
-<section class="grid grid-cols-2 w-[70%] h-full mx-auto pt-24">
+<section
+  class="md:grid md:grid-cols-2 flex flex-col md:w-[70%] w-[80%] h-full mx-auto md:pt-24 pt-10"
+>
   <aside>
     <slot name="aside" />
   </aside>
-  <main>
+  <main class="pt-96 md:pt-0 w-full">
     <slot name="main" />
   </main>
 </section>
