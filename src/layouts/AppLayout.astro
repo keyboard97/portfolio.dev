@@ -3,7 +3,7 @@
 ---
 
 <section
-  class="md:grid md:grid-cols-2 flex flex-col md:w-[70%] h-full mx-auto md:pt-24"
+  class="md:grid md:grid-cols-2 gap-10 flex flex-col md:w-[90%] lg:w-[88%] xl:w-[75%] 2xl:w-[70%] h-full mx-auto md:pt-24"
 >
   <aside>
     <slot name="aside" />
@@ -12,3 +12,9 @@
     <slot name="main" />
   </main>
 </section>
+
+<style scoped>
+  section{
+    grid-template-columns: 40% auto;
+  }
+</style>
