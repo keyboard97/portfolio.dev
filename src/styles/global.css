@@ -4,7 +4,7 @@
 
 :root {
   --bg-color: rgba(15, 23, 42, 1);
-  --ring-color: rgba(59, 130, 246, 0.3);
+  --ring-color: rgba(59, 130, 246, 0.5);
   /* --ring-color:#FFF; */
   --text-color: white;
   --text-opacity: rgba(255, 255, 255, 0.6);

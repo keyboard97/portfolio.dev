@@ -2,10 +2,7 @@
 
 ---
 
-<div
-  id="cursor"
-  class="w-60 h-60 rounded-full bg-ring-color blur-5xl pointer-events-none fixed"
->
+<div id="cursor" class="p-2 rounded-full pointer-events-none fixed">
 </div>
 
 <script>
@@ -40,11 +37,16 @@
 
 <style>
   #cursor {
-    height: 300px;
+    height: 1000px;
     aspect-ratio: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    /* filter: blur(10px); */
     position: fixed;
-  }
+    background: radial-gradient(circle at center, rgba(29, 25, 216, 0.10), transparent 60%);
+    /* background: radial-gradient(600px at 1040px 203px, rgba(29, 78, 216, 0.15), transparent 80%); */
+;
+    /* background: radial-gradient( rgba(29, 25, 216, 0.15),  rgba(29, 25, 216, 0.15),  rgba(29, 25, 216, 0.08), transparent); */
+}
 </style>
