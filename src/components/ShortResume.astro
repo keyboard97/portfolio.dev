@@ -3,6 +3,7 @@ import type { LocaleType } from "../i18n";
 import { useTranslations } from "../i18n";
 import SectionSelector from "./SectionSelector.astro";
 import SocialLinks from "./SocialLinks.astro";
+import Status from "./Status.astro";
 
 const t = useTranslations(Astro.currentLocale as LocaleType);
 ---
@@ -20,6 +21,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
     <p class="text-base w-3/4 description transition-all duration-700">
       {t("info.resume.description")}
     </p>
+    <Status status="unavailable" />
   </div>
   <SectionSelector />
   <SocialLinks />
@@ -33,6 +35,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
   const description = document.querySelector(".description");
   const sectionSelector = document.querySelector(".nav-section");
   const resumeContainer = document.querySelector(".resume-container");
+  const statusContainer = document.querySelector(".status-container");
 
   if (clientWidth < 768) {
     document.addEventListener("scroll", () => {
@@ -48,6 +51,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
         position?.classList.add("hidden");
         description?.classList.add("hidden");
         sectionSelector?.classList.add("hidden");
+        statusContainer?.classList.add("hidden");
       } else {
         title?.classList.add("text-5xl");
         position?.classList.add("text-xl");
@@ -59,6 +63,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
         resumeContainer?.classList.remove("backdrop-blur-lg");
         resumeContainer?.classList.add("h-screen");
         resumeContainer?.classList.remove("fixed");
+        statusContainer?.classList.remove("hidden");
       }
     });
   }

@@ -1,0 +1,34 @@
+---
+import { useTranslations, type LocaleType } from "../i18n";
+import { gradients } from "../utils/gradients";
+
+interface Props {
+  status: "working" | "available" | "unavailable";
+}
+
+const props = Astro.props as Props;
+const t = useTranslations(Astro.currentLocale as LocaleType);
+
+const gradient = gradients[props.status];
+---
+
+<div
+  class="status-container w-fit p-[2px] min-w-24 flex items-center justify-center relative overflow-hidden rounded-full"
+>
+  <div
+    class="bg-bg-color w-full rounded-full p-1 px-4 text-center text-xs text-white"
+  >
+    {t(`status.${props.status}`)}
+  </div>
+  <span
+    class="background bg-white absolute w-full h-64 -z-10 rounded-full animate-spin"
+  >
+  </span>
+</div>
+
+<style scoped define:vars={{ gradient }}>
+  .background {
+    animation: spin 2s linear infinite;
+    background: var(--gradient);
+  }
+</style>

@@ -5,6 +5,10 @@ export const locale = {
   experience: "Experience",
   projects: "Projects",
   time_present: "Present",
-  see_more:"See more...",
+  see_more: "See more...",
+  status: {
+    available: "Available for work",
+    unavailable: "Not available",
+  },
   info: json,
 };
