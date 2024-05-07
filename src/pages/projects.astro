@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import type { Project } from "../types/Project";
 
 const t = useTranslations(Astro.currentLocale as LocaleType);
-const projects = t("info.projects") as Project[];
+const projects = (t("info.projects") as Project[]).filter((x) => x.active);
 ---
 
 <Layout title="Portfolio · Projects">

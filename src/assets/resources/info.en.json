@@ -17,9 +17,9 @@
       "icon": "/src/assets/icons/linkedin.svg"
     },
     {
-      "name":"Mail",
+      "name": "Mail",
       "url": "mailto:adrianrdguez87@gmail.com",
-      "icon":"/src/assets/icons/mail.svg"
+      "icon": "/src/assets/icons/mail.svg"
     }
   ],
   "experience": [
@@ -65,7 +65,9 @@
       "link": "https://stageinhome.com/",
       "description": "Landing page development for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
       "image": "/project-images/stageinhome.png",
-      "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact"]
+      "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact"],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "StageInHome App",
@@ -81,7 +83,9 @@
         "C#",
         "MySQL",
         "Docker"
-      ]
+      ],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "Ai Art Generator",
@@ -96,7 +100,9 @@
         "React",
         ".Net",
         "C#"
-      ]
+      ],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "TracksCO2 monitoring app",
@@ -111,14 +117,18 @@
         "React",
         ".Net",
         "C#"
-      ]
+      ],
+      "active": true,
+      "pinned": true
     },
     {
       "name": "Gestión de cargadores · SIMON",
       "link": "https://evr.simon-cloud.com/",
       "description": "Development of a web application dedicated to the management of chargers for electric vehicles of the SIMON company (www.simonelectric.com). In it you can obtain the information and status of the chargers in real time for each charger.",
       "image": "/project-images/simon.png",
-      "technologies": ["HTML", "Tailwind", "Typescript", "Nextjs", "React"]
+      "technologies": ["HTML", "Tailwind", "Typescript", "Nextjs", "React"],
+      "active": true,
+      "pinned": true
     }
   ]
 }
