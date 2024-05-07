@@ -9,13 +9,15 @@ const props = Astro.props as Experience;
 <a
   href={props.link}
   target="_blank"
-  class="grid gap-4 p-6 rounded-lg transition-all"
+  class="md:grid flex flex-col gap-4 p-6 rounded-lg transition-all md:bg-transparent bg-white/5"
 >
   <p class="text-xs mt-1 uppercase">{props.start_date} - {props.end_date}</p>
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-2">
       <span class="flex gap-1">
-        <p class="title text-text-color">{props.position} · {props.title}</p>
+        <p class="title md:text-text-color text-emphasis-text-color">
+          {props.position} • {props.title}
+        </p>
         <img src={LinkIcon.src} class="link-icon w-5 -z-10" alt="link icon" />
       </span>
       <p class="text-sm">{props.description}</p>
@@ -46,6 +48,16 @@ const props = Astro.props as Experience;
           brightness(93%) contrast(97%);
         transform: translate(5px, -5px);
         transition: all 100ms;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    a {
+      .link-icon {
+        transition: all 100ms;
+        filter: invert(88%) sepia(29%) saturate(748%) hue-rotate(103deg)
+          brightness(93%) contrast(97%);
       }
     }
   }

@@ -8,7 +8,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
 ---
 
 <div
-  class="transition-all duration-700 flex flex-col gap-4 justify-between md:w-1/3 w-full md:h-[60%] fixed md:top-auto top-0 py-5 md:bg-transparent bg-bg-color"
+  class="resume-container transition-all duration-700 flex flex-col gap-4 md:justify-between justify-evenly md:w-1/3 w-full md:h-[60%] h-screen md:fixed md:top-auto top-0 py-8 md:bg-transparent md:px-0 px-10"
 >
   <div class="flex flex-col gap-3">
     <h1 class="text-5xl font-bold title transition-all duration-700">
@@ -32,6 +32,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
   const position = document.querySelector(".position");
   const description = document.querySelector(".description");
   const sectionSelector = document.querySelector(".nav-section");
+  const resumeContainer = document.querySelector(".resume-container");
 
   if (clientWidth < 768) {
     document.addEventListener("scroll", () => {
@@ -40,6 +41,9 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
         title?.classList.remove("text-5xl");
         position?.classList.remove("text-xl");
 
+        resumeContainer?.classList.add("backdrop-blur-lg");
+        resumeContainer?.classList.remove("h-screen");
+        resumeContainer?.classList.add("fixed");
         title?.classList.add("text-3xl");
         position?.classList.add("hidden");
         description?.classList.add("hidden");
@@ -52,6 +56,9 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
         position?.classList.remove("hidden");
         description?.classList.remove("hidden");
         sectionSelector?.classList.remove("hidden");
+        resumeContainer?.classList.remove("backdrop-blur-lg");
+        resumeContainer?.classList.add("h-screen");
+        resumeContainer?.classList.remove("fixed");
       }
     });
   }
