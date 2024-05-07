@@ -1,0 +1,88 @@
+---
+import { useTranslations, type LocaleType } from "../i18n";
+
+const t = useTranslations(Astro.currentLocale as LocaleType);
+---
+
+<nav>
+  <ul>
+    <li>
+      <a href="#top" class="nav-item about"> <hr />{t("about")}</a>
+    </li>
+    <li>
+      <a href="#experience" class="nav-item experience"
+        ><hr />{t("experience")}</a
+      >
+    </li>
+    <li>
+      <a href="#projects" class="nav-item projects"><hr />{t("projects")}</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  const setActive = (activeTag: string) => {
+    const navItems = document.getElementsByClassName("nav-item");
+    [...navItems].forEach((navItem) => {
+      navItem.classList.remove("active");
+    });
+
+    [...navItems]
+      .find((navItem) => navItem.classList.contains(activeTag))
+      ?.classList.add("active");
+  };
+
+  const aboutSection = document.getElementById("about");
+  const experienceSection = document.getElementById("experience");
+  const projectsSection = document.getElementById("projects");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          setActive(entry.target.id);
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    },
+    {
+      threshold: 0.25,
+    }
+  );
+
+  observer.observe(aboutSection!);
+  observer.observe(experienceSection!);
+  observer.observe(projectsSection!);
+</script>
+
+<style scoped>
+  ul {
+    @apply flex flex-col gap-4;
+
+    a {
+      @apply flex items-center gap-2;
+
+      hr {
+        @apply w-8 transition-all duration-300;
+      }
+    }
+  }
+  .active {
+    @apply text-white font-bold;
+
+    &hr {
+      @apply w-16;
+    }
+  }
+
+  li:hover {
+    a {
+      @apply text-white;
+    }
+    hr {
+      @apply w-16;
+    }
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import { useTranslations, type LocaleType } from "../i18n";
+import Layout from "../layouts/Layout.astro";
+import type { Project } from "../types/Project";
+
+const t = useTranslations(Astro.currentLocale as LocaleType);
+const projects = t("info.projects") as Project[];
+---
+
+<Layout title="Portfolio · Projects">
+  <div class="flex flex-col gap-4 w-[50%] mx-auto my-24">
+    <h1 class="text-4xl font-bold">{t("projects")}</h1>
+    {projects.map((pro) => <ProjectCard {...pro} imageFull />)}
+  </div>
+</Layout>

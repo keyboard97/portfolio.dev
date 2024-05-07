@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: rgba(15, 23, 42, 1);
+  --ring-color: rgba(59, 130, 246, 0.3);
+  /* --ring-color:#FFF; */
+  --text-color: white;
+  --text-opacity: rgba(255, 255, 255, 0.6);
+  --emphasis-color: rgb(19, 78, 74);
+  --emphasis-text-color: rgb(94, 234, 212);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+button {
+  @apply text-text-color;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter text-text-opacity bg-bg-color;
+}
+
+::selection{
+  @apply bg-emphasis-text-color text-bg-color
+}

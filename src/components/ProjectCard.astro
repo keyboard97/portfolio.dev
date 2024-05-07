@@ -1,0 +1,51 @@
+---
+import type { Project } from "../types/Project";
+import Badge from "./Badge.astro";
+
+interface CardProps extends Project {
+  imageFull?: boolean;
+}
+
+const props = Astro.props as CardProps;
+---
+
+<a
+  href={props.link}
+  target="_blank"
+  class="grid gap-4 p-6 rounded-lg transition-all"
+>
+  <img
+    src={props.image}
+    alt="project image"
+    class={`rounded-sm transition-all duration-1000`}
+  />
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
+      <p class="title text-text-color">{props.name}</p>
+      <p class="text-sm">{props.description}</p>
+    </div>
+    <div class="flex flex-wrap gap-1 badges">
+      {props.technologies.map((badge) => <Badge text={badge} />)}
+    </div>
+  </div>
+</a>
+
+<style scoped define:vars={{ imageFull: props.imageFull ? "160px" : "120px" }}>
+  a {
+    grid-template-columns: var(--imageFull) auto;
+    transition: all 600ms;
+
+    &:hover {
+      @apply bg-white/5;
+      .title {
+        @apply text-emphasis-text-color;
+      }
+    }
+  }
+
+  img {
+    &:hover {
+      /* scale: 1.5; */
+    }
+  }
+</style>

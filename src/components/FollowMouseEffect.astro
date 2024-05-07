@@ -1,0 +1,50 @@
+---
+
+---
+
+<div
+  id="cursor"
+  class="w-60 h-60 rounded-full bg-ring-color blur-5xl pointer-events-none fixed"
+>
+</div>
+
+<script>
+  // const cursor = document.querySelector("#cursor") as HTMLElement;
+  // document.addEventListener("mousemove", (e) => {
+  //   const x = e.clientX;
+  //   const y = e.clientY;
+
+  //   debugger;
+  //   const position = {
+  //     x: x - cursor.clientWidth / 2,
+  //     y: y - cursor.clientHeight / 2,
+  //   };
+
+  //   cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
+  // });
+
+  const move = document.getElementById("cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    const { clientX, clientY } = e;
+
+    move?.animate(
+      {
+        left: `${clientX}px`,
+        top: `${clientY}px`,
+      },
+      { duration: 500, fill: "forwards" }
+    );
+  });
+</script>
+
+<style>
+  #cursor {
+    height: 300px;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+  }
+</style>

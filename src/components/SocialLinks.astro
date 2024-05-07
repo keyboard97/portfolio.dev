@@ -1,0 +1,44 @@
+---
+import { useTranslations, type LocaleType } from "../i18n";
+
+const t = useTranslations(Astro.currentLocale as LocaleType);
+
+type SocialLink = {
+  name: string;
+  url: string;
+  icon: string;
+};
+---
+
+<nav>
+  <ul class="flex gap-3">
+    {
+      t("info.social_links").map((link: SocialLink) => (
+        <li>
+          <a href={link.url} target="_blank">
+            <img
+              src={link.icon}
+              alt={`${link.name} icon`}
+              class="h-8 transition-all duration-200"
+            />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  a {
+    img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(191deg)
+        brightness(100%) contrast(101%);
+
+      &:hover {
+        filter: invert(75%) sepia(62%) saturate(340%) hue-rotate(116deg)
+          brightness(96%) contrast(98%);
+        scale: 1.1;
+      }
+    }
+  }
+</style>

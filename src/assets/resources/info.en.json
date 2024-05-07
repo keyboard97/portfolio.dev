@@ -1,0 +1,124 @@
+{
+  "resume": {
+    "name": "Adrián Rodríguez",
+    "position": "Desarrollador Web",
+    "description": "I build pixel-perfect, engaging, and accessible digital experiences.",
+    "text": "Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio.\n\n    My main focus these days is building accessible user interfaces for our customers at Klaviyo. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.\nWhen I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds."
+  },
+  "social_links": [
+    {
+      "name": "Github",
+      "url": "https://github.com/keyboard97",
+      "icon": "/src/assets/icons/github.svg"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/arodriguez797/",
+      "icon": "/src/assets/icons/linkedin.svg"
+    },
+    {
+      "name":"Mail",
+      "url": "mailto:adrianrdguez87@gmail.com",
+      "icon":"/src/assets/icons/mail.svg"
+    }
+  ],
+  "experience": [
+    {
+      "start_date": "10/2022",
+      "end_date": "present",
+      "title": "Napptilus Tech Labs",
+      "position": "Fullstack Developer",
+      "description": "I work on developing web platforms for startups, including StageInHome. This platform uses Machine Learning techniques to automatically transform empty or outdated spaces into cozy and attractive environments.",
+      "link": "https://napptilus.com/",
+      "badges": [
+        "HTML",
+        "Typescript",
+        "Astro",
+        "React",
+        "Nextjs",
+        ".Net",
+        "Vuejs"
+      ]
+    },
+    {
+      "start_date": "04/2022",
+      "end_date": "09/2022",
+      "title": "Aicros",
+      "position": "Frontend Developer",
+      "description": "I contributed to the development of the RegConst system, which is used for all worker registration and management tasks by the company and its subsidiaries under the Ministry of Construction in Cuba.",
+      "link": "https://www.aicros.cu/",
+      "badges": ["Typescript", "Angular"]
+    },
+    {
+      "start_date": "02/2022",
+      "end_date": "09/2022",
+      "title": "Tecnomática",
+      "position": "Fullstack Developer",
+      "description": "I participated in the development and maintenance of the SISCONT6 system. This accounting system is used by all companies subordinate to the Ministry of Energy and Mines in Cuba.",
+      "link": "https://tecnomatica.cupet.cu/",
+      "badges": ["Typescript", "Angular", "Java", "Spring Boot", "HTML"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "StageInHome landing page",
+      "link": "https://stageinhome.com/",
+      "description": "Landing page development for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
+      "image": "/project-images/stageinhome.png",
+      "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact"]
+    },
+    {
+      "name": "StageInHome App",
+      "link": "https://app.stageinhome.com/",
+      "description": "Development of the app for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
+      "image": "/project-images/app.stageinhome.png",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Vuejs",
+        ".Net",
+        "C#",
+        "MySQL",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Ai Art Generator",
+      "link": "https://artgeneratorai.art/",
+      "description": "Development of a web application that allows generating images from an AI, giving the possibility of printing the images on canvas.",
+      "image": "/project-images/artgenerator.png",
+      "technologies": [
+        "HTML",
+        "Tailwind",
+        "Typescript",
+        "Astro",
+        "React",
+        ".Net",
+        "C#"
+      ]
+    },
+    {
+      "name": "TracksCO2 monitoring app",
+      "link": "https://app.monitoring.tracksco2.com/",
+      "description": "Development of a web application that shows the evolution of CO2 levels in a given location, obtaining all the data and parameters of the location.",
+      "image": "/project-images/tracksCO2.monitoring.png",
+      "technologies": [
+        "HTML",
+        "Tailwind",
+        "Typescript",
+        "Astro",
+        "React",
+        ".Net",
+        "C#"
+      ]
+    },
+    {
+      "name": "Gestión de cargadores · SIMON",
+      "link": "https://evr.simon-cloud.com/",
+      "description": "Development of a web application dedicated to the management of chargers for electric vehicles of the SIMON company (www.simonelectric.com). In it you can obtain the information and status of the chargers in real time for each charger.",
+      "image": "/project-images/simon.png",
+      "technologies": ["HTML", "Tailwind", "Typescript", "Nextjs", "React"]
+    }
+  ]
+}

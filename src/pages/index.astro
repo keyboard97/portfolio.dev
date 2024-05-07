@@ -1,0 +1,13 @@
+---
+import Content from "../components/Content.astro";
+import ShortResume from "../components/ShortResume.astro";
+import AppLayout from "../layouts/AppLayout.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Portfolio">
+  <AppLayout>
+      <ShortResume slot="aside"/>
+      <Content slot="main"/>
+  </AppLayout>
+</Layout>
