@@ -16,6 +16,7 @@ export default {
         "text-opacity": "var(--text-opacity)",
         "emphasis-color": "var(--emphasis-color)",
         "emphasis-text-color": "var(--emphasis-text-color)",
+        "hover-bg-color": "var(--hover-bg-color)",
       },
     },
   },

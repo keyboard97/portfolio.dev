@@ -12,7 +12,7 @@ const props = Astro.props as CardProps;
 <a
   href={props.link}
   target="_blank"
-  class="md:grid flex flex-col gap-4 p-6 rounded-lg transition-all md:bg-transparent bg-white/5"
+  class="md:grid flex flex-col gap-4 p-6 rounded-lg transition-all md:bg-transparent bg-hover-bg-color"
 >
   <img
     src={props.image}
@@ -36,7 +36,7 @@ const props = Astro.props as CardProps;
     transition: all 600ms;
 
     &:hover {
-      @apply bg-white/5;
+      @apply bg-hover-bg-color;
       .title {
         @apply text-emphasis-text-color;
       }

@@ -4,12 +4,17 @@
 
 :root {
   --bg-color: rgba(15, 23, 42, 1);
-  --ring-color: rgba(59, 130, 246, 0.5);
+  --ring-color: radial-gradient(
+    circle at center,
+    rgba(29, 25, 216, 0.1),
+    transparent 60%
+  );
   /* --ring-color:#FFF; */
   --text-color: white;
   --text-opacity: rgba(255, 255, 255, 0.6);
   --emphasis-color: rgb(19, 78, 74);
   --emphasis-text-color: rgb(94, 234, 212);
+  --hover-bg-color: rgba(255, 255, 255, 0.05);
 }
 
 h1,
@@ -30,6 +35,6 @@ body {
   @apply font-inter text-text-opacity bg-bg-color;
 }
 
-::selection{
-  @apply bg-emphasis-text-color text-bg-color
+::selection {
+  @apply bg-emphasis-text-color text-bg-color;
 }
