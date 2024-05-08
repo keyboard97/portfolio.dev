@@ -7,7 +7,7 @@ export default {
         "5xl": "100px",
       },
       fontFamily: {
-        inter: ["Inter"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         "bg-color": "var(--bg-color)",

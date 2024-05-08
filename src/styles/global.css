@@ -30,6 +30,7 @@ b,
 button {
   @apply text-text-color;
 }
+
 * {
   scroll-behavior: smooth;
 }
