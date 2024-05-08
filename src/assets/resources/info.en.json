@@ -9,17 +9,17 @@
     {
       "name": "Github",
       "url": "https://github.com/keyboard97",
-      "icon": "/src/assets/icons/github.svg"
+      "icon": "../assets/icons/github.svg"
     },
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/arodriguez797/",
-      "icon": "/src/assets/icons/linkedin.svg"
+      "icon": "../assets/icons/linkedin.svg"
     },
     {
       "name": "Mail",
       "url": "mailto:adrianrdguez87@gmail.com",
-      "icon": "/src/assets/icons/mail.svg"
+      "icon": "../assets/icons/mail.svg"
     }
   ],
   "experience": [
@@ -65,7 +65,7 @@
       "name": "StageInHome landing page",
       "link": "https://stageinhome.com/",
       "description": "Landing page development for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
-      "image": "/project-images/stageinhome.png",
+      "image": "/project-images/stageinhome.webp",
       "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact", "Git"],
       "active": true,
       "pinned": true
@@ -74,7 +74,7 @@
       "name": "StageInHome App",
       "link": "https://app.stageinhome.com/",
       "description": "Development of the app for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
-      "image": "/project-images/app.stageinhome.png",
+      "image": "/project-images/app.stageinhome.webp",
       "technologies": [
         "HTML",
         "CSS",
@@ -93,7 +93,7 @@
       "name": "Ai Art Generator",
       "link": "https://artgeneratorai.art/",
       "description": "Development of a web application that allows generating images from an AI, giving the possibility of printing the images on canvas.",
-      "image": "/project-images/artgenerator.png",
+      "image": "/project-images/artgenerator.webp",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -111,7 +111,7 @@
       "name": "TracksCO2 monitoring app",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Development of a web application that shows the evolution of CO2 levels in a given location, obtaining all the data and parameters of the location.",
-      "image": "/project-images/tracksCO2.monitoring.png",
+      "image": "/project-images/tracksCO2.monitoring.webp",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -129,7 +129,7 @@
       "name": "Charger management • SIMON",
       "link": "https://evr.simon-cloud.com/",
       "description": "Development of a web application dedicated to the management of chargers for electric vehicles of the SIMON company (www.simonelectric.com). In it you can obtain the information and status of the chargers in real time for each charger.",
-      "image": "/project-images/simon.png",
+      "image": "/project-images/simon.webp",
       "technologies": [
         "HTML",
         "Tailwind",

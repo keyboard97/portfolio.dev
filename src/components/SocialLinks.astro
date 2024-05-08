@@ -1,13 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import { useTranslations, type LocaleType } from "../i18n";
+import type { SocialLink } from "../types/SocialLink";
 
 const t = useTranslations(Astro.currentLocale as LocaleType);
 
-type SocialLink = {
-  name: string;
-  url: string;
-  icon: string;
-};
+const icons = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/icons/**.svg"
+);
 ---
 
 <nav class="nav-links">
@@ -16,10 +16,11 @@ type SocialLink = {
       t("info.social_links").map((link: SocialLink) => (
         <li>
           <a href={link.url} target="_blank">
-            <img
-              src={link.icon}
+            <Image
+              src={icons[link.icon]()}
               alt={`${link.name} icon`}
               class="h-8 transition-all duration-200"
+              width={32}
             />
           </a>
         </li>

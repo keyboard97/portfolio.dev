@@ -9,17 +9,17 @@
     {
       "name": "Github",
       "url": "https://github.com/keyboard97",
-      "icon": "/src/assets/icons/github.svg"
+      "icon": "../assets/icons/github.svg"
     },
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/arodriguez797/",
-      "icon": "/src/assets/icons/linkedin.svg"
+      "icon": "../assets/icons/linkedin.svg"
     },
     {
       "name": "Mail",
       "url": "mailto:adrianrdguez87@gmail.com",
-      "icon": "/src/assets/icons/mail.svg"
+      "icon": "../assets/icons/mail.svg"
     }
   ],
   "experience": [
@@ -65,7 +65,7 @@
       "name": "Página de inicio de StageInHome",
       "link": "https://stageinhome.com/",
       "description": "Desarrollo de la página de inicio para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
-      "image": "/project-images/stageinhome.png",
+      "image": "/project-images/stageinhome.webp",
       "technologies": ["HTML", "CSS", "Typescript", "Astro", "Preact", "Git"],
       "active": true,
       "pinned": true
@@ -74,7 +74,7 @@
       "name": "Aplicación StageInHome",
       "link": "https://app.stageinhome.com/",
       "description": "Desarrollo de la aplicación para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
-      "image": "/project-images/app.stageinhome.png",
+      "image": "/project-images/app.stageinhome.webp",
       "technologies": [
         "HTML",
         "CSS",
@@ -93,7 +93,7 @@
       "name": "Ai Art Generator",
       "link": "https://artgeneratorai.art/",
       "description": "Desarrollo de una aplicación web que permite generar imágenes a partir de una IA, brindando la posibilidad de imprimir las imágenes en lienzo.",
-      "image": "/project-images/artgenerator.png",
+      "image": "/project-images/artgenerator.webp",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -111,7 +111,7 @@
       "name": "TracksCO2 app de monitorización",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Desarrollo de una aplicación web que muestra la evolución de los niveles de CO2 en una ubicación dada, obteniendo todos los datos y parámetros de la ubicación.",
-      "image": "/project-images/tracksCO2.monitoring.png",
+      "image": "/project-images/tracksCO2.monitoring.webp",
       "technologies": [
         "HTML",
         "Tailwind",
@@ -129,7 +129,7 @@
       "name": "Gestión de cargadores • SIMON",
       "link": "https://evr.simon-cloud.com/",
       "description": "Desarrollo de una aplicación web dedicada a la gestión de cargadores para vehículos eléctricos de la empresa SIMON (www.simonelectric.com). En ella, puedes obtener información y estado de los cargadores en tiempo real para cada uno.",
-      "image": "/project-images/simon.png",
+      "image": "/project-images/simon.webp",
       "technologies": [
         "HTML",
         "Tailwind",
