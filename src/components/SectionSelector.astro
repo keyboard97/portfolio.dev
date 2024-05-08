@@ -7,15 +7,16 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
 <nav class="nav-section">
   <ul>
     <li>
-      <a href="#top" class="nav-item about"> <hr />{t("about")}</a>
+      <a href="#top" class="nav-item about">
+        <hr />{t("about")}</a>
     </li>
     <li>
-      <a href="#experience" class="nav-item experience"
-        ><hr />{t("experience")}</a
-      >
+      <a href="#experience" class="nav-item experience">
+        <hr />{t("experience")}</a>
     </li>
     <li>
-      <a href="#projects" class="nav-item projects"><hr />{t("projects")}</a>
+      <a href="#projects" class="nav-item projects">
+        <hr />{t("projects")}</a>
     </li>
   </ul>
 </nav>
@@ -60,10 +61,8 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
 <style scoped>
   ul {
     @apply flex flex-col gap-4;
-
     a {
       @apply flex items-center gap-2;
-
       hr {
         @apply w-8 border-[1.5px] rounded transition-all duration-300;
       }
@@ -71,12 +70,10 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
   }
   .active {
     @apply text-text-color font-bold;
-
     & hr {
       @apply w-14;
     }
   }
-
   li:hover {
     a {
       @apply text-white;

@@ -1,11 +1,11 @@
 ---
-
 interface Props{
     text: string;
 }
 
 const props = Astro.props as Props
-
 ---
 
-<span class="bg-emphasis-color text-emphasis-text-color px-3 py-1 rounded-full text-xs">{props.text}</span>
+<span class="bg-emphasis-color text-emphasis-text-color px-3 py-1 rounded-full text-xs">
+    {props.text}
+</span>

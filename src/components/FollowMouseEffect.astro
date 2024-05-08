@@ -2,24 +2,14 @@
 
 ---
 
-<div transition:persist id="cursor" class="p-2 rounded-full pointer-events-none fixed">
+<div
+  transition:persist
+  id="cursor"
+  class="p-2 rounded-full pointer-events-none fixed"
+>
 </div>
 
 <script>
-  // const cursor = document.querySelector("#cursor") as HTMLElement;
-  // document.addEventListener("mousemove", (e) => {
-  //   const x = e.clientX;
-  //   const y = e.clientY;
-
-  //   debugger;
-  //   const position = {
-  //     x: x - cursor.clientWidth / 2,
-  //     y: y - cursor.clientHeight / 2,
-  //   };
-
-  //   cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
-  // });
-
   const move = document.getElementById("cursor");
 
   document.addEventListener("mousemove", (e) => {
@@ -42,11 +32,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* filter: blur(10px); */
     position: fixed;
     background: var(--ring-color);
-    /* background: radial-gradient(600px at 1040px 203px, rgba(29, 78, 216, 0.15), transparent 80%); */
-;
-    /* background: radial-gradient( rgba(29, 25, 216, 0.15),  rgba(29, 25, 216, 0.15),  rgba(29, 25, 216, 0.08), transparent); */
-}
+  }
 </style>

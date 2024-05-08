@@ -1,6 +1,5 @@
 import { languages, getLangFromUrl } from "../i18n"
 
-
 export default function ChangeLanguage() {
     const currentRoute = window.location.pathname
 
