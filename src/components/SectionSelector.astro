@@ -48,7 +48,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
       });
     },
     {
-      threshold: 0.50,
+      threshold: 0.5,
     }
   );
 
@@ -65,7 +65,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
       @apply flex items-center gap-2;
 
       hr {
-        @apply w-8 transition-all duration-300;
+        @apply w-8 border-[1.5px] rounded transition-all duration-300;
       }
     }
   }
@@ -73,7 +73,7 @@ const t = useTranslations(Astro.currentLocale as LocaleType);
     @apply text-white font-bold;
 
     & hr {
-      @apply w-16;
+      @apply w-14;
     }
   }
 
