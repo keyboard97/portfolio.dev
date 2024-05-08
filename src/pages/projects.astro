@@ -9,7 +9,7 @@ const projects = (t("info.projects") as Project[]).filter((x) => x.active);
 ---
 
 <Layout title="Portfolio • Projects">
-  <div class="flex flex-col gap-4 w-[50%] mx-auto my-24">
+  <div class="flex flex-col gap-4 w-[90%] md:w-[80%] lg:w-[60%] 2xl:w-[40%] mx-auto my-24">
     <h1 class="text-4xl font-bold">{t("projects")}</h1>
     {projects.map((pro) => <ProjectCard {...pro} imageFull />)}
   </div>
