@@ -18,7 +18,13 @@ const props = Astro.props as Experience;
         <p class="title md:text-text-color text-emphasis-text-color">
           {props.position} • {props.title}
         </p>
-        <img src={LinkIcon.src} class="link-icon w-5 h-5 -z-10" alt="link icon" width="20px" height="20px" />
+        <img
+          src={LinkIcon.src}
+          class="link-icon w-5 h-5 -z-10"
+          alt="link icon"
+          width="20px"
+          height="20px"
+        />
       </span>
       <p class="text-sm">{props.description}</p>
     </div>
@@ -34,8 +40,7 @@ const props = Astro.props as Experience;
     transition: all 600ms;
     .link-icon {
       transition: all 100ms;
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(191deg)
-        brightness(100%) contrast(101%);
+      filter: var(--filter-normal-state);
     }
 
     &:hover {
@@ -44,8 +49,7 @@ const props = Astro.props as Experience;
         @apply text-emphasis-text-color;
       }
       .link-icon {
-        filter: invert(88%) sepia(29%) saturate(748%) hue-rotate(103deg)
-          brightness(93%) contrast(97%);
+        filter: var(--filter-emphasis-state);
         transform: translate(5px, -5px);
         transition: all 100ms;
       }
@@ -56,8 +60,7 @@ const props = Astro.props as Experience;
     a {
       .link-icon {
         transition: all 100ms;
-        filter: invert(88%) sepia(29%) saturate(748%) hue-rotate(103deg)
-          brightness(93%) contrast(97%);
+        filter: var(--filter-emphasis-state);
       }
     }
   }

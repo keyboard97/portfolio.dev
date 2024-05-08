@@ -9,12 +9,15 @@
     rgba(29, 25, 216, 0.1),
     transparent 60%
   );
-  /* --ring-color:#FFF; */
   --text-color: white;
   --text-opacity: rgba(255, 255, 255, 0.6);
   --emphasis-color: rgb(19, 78, 74);
   --emphasis-text-color: rgb(94, 234, 212);
   --hover-bg-color: rgba(255, 255, 255, 0.05);
+  --filter-normal-state: invert(100%) sepia(0%) saturate(0%) hue-rotate(191deg)
+    brightness(100%) contrast(101%);
+  --filter-emphasis-state: invert(75%) sepia(62%) saturate(340%)
+    hue-rotate(116deg) brightness(96%) contrast(98%);
 }
 
 h1,

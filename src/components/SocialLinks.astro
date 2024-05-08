@@ -32,12 +32,10 @@ const icons = import.meta.glob<{ default: ImageMetadata }>(
 <style>
   a {
     img {
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(191deg)
-        brightness(100%) contrast(101%);
+      filter: var(--filter-normal-state);
 
       &:hover {
-        filter: invert(75%) sepia(62%) saturate(340%) hue-rotate(116deg)
-          brightness(96%) contrast(98%);
+        filter: var(--filter-emphasis-state);
         scale: 1.1;
       }
     }
