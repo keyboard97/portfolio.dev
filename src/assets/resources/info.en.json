@@ -62,7 +62,7 @@
   ],
   "projects": [
     {
-      "name": "StageInHome landing page",
+      "name": "StageInHome landing page • Napptilus",
       "link": "https://stageinhome.com/",
       "description": "Landing page development for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
       "image": "/project-images/stageinhome.webp",
@@ -71,7 +71,7 @@
       "pinned": true
     },
     {
-      "name": "StageInHome App",
+      "name": "StageInHome App • Napptilus",
       "link": "https://app.stageinhome.com/",
       "description": "Development of the app for the Startup StageInHome. It allows you to transform empty or outdated spaces into cozy and attractive rooms.",
       "image": "/project-images/app.stageinhome.webp",
@@ -90,7 +90,7 @@
       "pinned": true
     },
     {
-      "name": "Ai Art Generator",
+      "name": "Ai Art Generator • Napptilus",
       "link": "https://artgeneratorai.art/",
       "description": "Development of a web application that allows generating images from an AI, giving the possibility of printing the images on canvas.",
       "image": "/project-images/artgenerator.webp",
@@ -108,7 +108,7 @@
       "pinned": true
     },
     {
-      "name": "TracksCO2 monitoring app",
+      "name": "TracksCO2 monitoring app • Napptilus",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Development of a web application that shows the evolution of CO2 levels in a given location, obtaining all the data and parameters of the location.",
       "image": "/project-images/tracksCO2.monitoring.webp",
