@@ -62,7 +62,7 @@
   ],
   "projects": [
     {
-      "name": "Página de inicio de StageInHome",
+      "name": "Página de inicio de StageInHome • Napptilus",
       "link": "https://stageinhome.com/",
       "description": "Desarrollo de la página de inicio para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
       "image": "/project-images/stageinhome.webp",
@@ -71,7 +71,7 @@
       "pinned": true
     },
     {
-      "name": "Aplicación StageInHome",
+      "name": "Aplicación StageInHome • Napptilus",
       "link": "https://app.stageinhome.com/",
       "description": "Desarrollo de la aplicación para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
       "image": "/project-images/app.stageinhome.webp",
@@ -90,7 +90,7 @@
       "pinned": true
     },
     {
-      "name": "Ai Art Generator",
+      "name": "Ai Art Generator • Napptilus",
       "link": "https://artgeneratorai.art/",
       "description": "Desarrollo de una aplicación web que permite generar imágenes a partir de una IA, brindando la posibilidad de imprimir las imágenes en lienzo.",
       "image": "/project-images/artgenerator.webp",
@@ -108,7 +108,7 @@
       "pinned": true
     },
     {
-      "name": "TracksCO2 app de monitorización",
+      "name": "TracksCO2 app de monitorización • Napptilus",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Desarrollo de una aplicación web que muestra la evolución de los niveles de CO2 en una ubicación dada, obteniendo todos los datos y parámetros de la ubicación.",
       "image": "/project-images/tracksCO2.monitoring.webp",
@@ -140,6 +140,38 @@
       ],
       "active": true,
       "pinned": true
+    },
+    {
+      "name": "RegConst • Aicros",
+      "link": "https://regconst.netcons.com.cu/public/home",
+      "description": "Desarrollo de la web del sistema RegConst, utilizado para todas las tareas de registro y gestión de trabajadores empleado por la empresa y las empresas subordinadas al Ministerio de la Construcción en Cuba.",
+      "image": null,
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Angular",
+        "Angular Material",
+        "Git"
+      ],
+      "active": true,
+      "pinned": false
+    },
+    {
+      "name": "SISCONT6 • Tecnomática",
+      "link": "https://tecnomatica.cupet.cu/es/print/productos/siscont",
+      "description": "Desarrollo y mantenimiento del sistema SISCONT6. Sistema contable utilizado por todas las empresas subordinadas al Ministerio de Energía y Minas en Cuba.",
+      "image": null,
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Angular",
+        "Java Spring Boot",
+        "Git"
+      ],
+      "active": true,
+      "pinned": false
     }
   ]
 }

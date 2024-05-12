@@ -140,6 +140,38 @@
       ],
       "active": true,
       "pinned": true
+    },
+    {
+      "name": "RegConst • Aicros",
+      "link": "https://regconst.netcons.com.cu/public/home",
+      "description": "Contributed to the development of the RegConst system, which is used for all worker registration and management tasks by the company and its subsidiaries under the Ministry of Construction in Cuba.",
+      "image": null,
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Angular",
+        "Angular Material",
+        "Git"
+      ],
+      "active": true,
+      "pinned": false
+    },
+    {
+      "name": "SISCONT6 • Tecnomática",
+      "link": "https://tecnomatica.cupet.cu/es/print/productos/siscont",
+      "description": "Participated in the development and maintenance of the SISCONT6 system. This accounting system is used by all companies subordinate to the Ministry of Energy and Mines in Cuba.",
+      "image": null,
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "Angular",
+        "Java Spring Boot",
+        "Git"
+      ],
+      "active": true,
+      "pinned": false
     }
   ]
 }
