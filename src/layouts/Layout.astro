@@ -27,6 +27,13 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
     <ViewTransitions />
+
+    <script>
+      import posthog from "posthog-js";
+      posthog.init(import.meta.env.PUBLIC_POSTHOG_API_KEY!, {
+        api_host: import.meta.env.PUBLIC_POSTHOG_API_HOST,
+      });
+    </script>
   </head>
   <body class="min-h-screen h-full w-full max-w-[1920px] mx-auto">
     <header class="fixed top-2 right-4 z-50">
