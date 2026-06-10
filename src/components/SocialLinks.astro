@@ -2,8 +2,10 @@
 import { useTranslations, type LocaleType } from "../i18n";
 import type { SocialLink } from "../types/SocialLink";
 import { Image } from "astro:assets";
+import CvIcon from "../assets/icons/cv.svg";
 
 const t = useTranslations(Astro.currentLocale as LocaleType);
+const cvUrl = import.meta.env.PUBLIC_CV_URL;
 
 const icons = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/icons/**.svg"
@@ -26,6 +28,18 @@ const icons = import.meta.glob<{ default: ImageMetadata }>(
         </li>
       ))
     }
+    {cvUrl && (
+      <li>
+        <a href={cvUrl} target="_blank" aria-label="CV">
+          <Image
+            src={CvIcon}
+            alt="CV icon"
+            class="h-8 transition-all duration-200"
+            width={32}
+          />
+        </a>
+      </li>
+    )}
   </ul>
 </nav>
 
