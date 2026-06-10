@@ -8,6 +8,8 @@ export default {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        "space-grotesk": ["Space Grotesk", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
         "bg-color": "var(--bg-color)",

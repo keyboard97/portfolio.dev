@@ -28,7 +28,7 @@ const projectsUrl = getRelativeLocaleUrl(
 
   <div id="projects" class="flex flex-col gap-4">
     {projects.map((pro) => <ProjectCard {...pro} />)}
-    <a href={projectsUrl} class="hover:text-emphasis-text-color text-sm"
+    <a href={projectsUrl} class="hover:text-emphasis-text-color font-mono uppercase text-xs"
       >{t("see_more")}</a
     >
   </div>
