@@ -31,7 +31,11 @@ export function useTranslations(lang: keyof typeof locales) {
     for (const nestedKey of nestedKeys) {
       value = value[nestedKey] as string;
       if (!value) {
-        value = (locales as any)[defaultLang][nestedKey];
+        let fallback: any = locales[defaultLang];
+        for (const k of nestedKeys) {
+          fallback = fallback?.[k];
+        }
+        value = fallback;
         break;
       }
     }
