@@ -40,7 +40,7 @@ const canonicalUrl = canonical ?? `${siteUrl}${Astro.url.pathname}`;
 <meta name="twitter:image" content={ogImageUrl} />
 
 <!-- JSON-LD -->
-<script type="application/ld+json" set:html={JSON.stringify({
+<script is:inline type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Adrián Rodríguez",

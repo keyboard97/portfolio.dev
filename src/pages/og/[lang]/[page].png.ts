@@ -1,4 +1,8 @@
 import type { APIRoute, GetStaticPaths } from "astro";
+import { readFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import { Resvg } from "@resvg/resvg-js";
+import satori from "satori";
 
 export const getStaticPaths: GetStaticPaths = () => [
   { params: { lang: "en", page: "home" } },
@@ -6,10 +10,6 @@ export const getStaticPaths: GetStaticPaths = () => [
   { params: { lang: "es", page: "home" } },
   { params: { lang: "es", page: "projects" } },
 ];
-import satori from "satori";
-import { Resvg } from "@resvg/resvg-js";
-import { readFile } from "node:fs/promises";
-import { fileURLToPath } from "node:url";
 
 const CONTENT: Record<string, Record<string, { title: string; subtitle: string; description: string }>> = {
   en: {
@@ -38,7 +38,7 @@ const CONTENT: Record<string, Record<string, { title: string; subtitle: string; 
   },
 };
 
-let fontCache: { regular: ArrayBuffer; bold: ArrayBuffer } | null = null;
+let fontCache: { regular: Buffer; bold: Buffer } | null = null;
 
 async function getFonts() {
   if (fontCache) return fontCache;
@@ -54,8 +54,8 @@ async function getFonts() {
 }
 
 export const GET: APIRoute = async ({ params }) => {
-  const lang = (params.lang === "es" ? "es" : "en") as string;
-  const page = (params.page === "projects" ? "projects" : "home") as string;
+  const lang = params.lang === "es" ? "es" : "en";
+  const page = params.page === "projects" ? "projects" : "home";
   const content = CONTENT[lang][page];
   const fonts = await getFonts();
 
@@ -75,7 +75,6 @@ export const GET: APIRoute = async ({ params }) => {
           position: "relative",
         },
         children: [
-          // Top accent line
           {
             type: "div",
             props: {
@@ -89,7 +88,6 @@ export const GET: APIRoute = async ({ params }) => {
               },
             },
           },
-          // Main content
           {
             type: "div",
             props: {
@@ -123,7 +121,6 @@ export const GET: APIRoute = async ({ params }) => {
               ],
             },
           },
-          // Bottom section
           {
             type: "div",
             props: {
@@ -145,11 +142,7 @@ export const GET: APIRoute = async ({ params }) => {
                 {
                   type: "div",
                   props: {
-                    style: {
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "14px",
-                    },
+                    style: { display: "flex", alignItems: "center", gap: "14px" },
                     children: [
                       {
                         type: "div",
@@ -171,7 +164,7 @@ export const GET: APIRoute = async ({ params }) => {
                             fontWeight: 400,
                             letterSpacing: "0.5px",
                           },
-                          children: "adrianrdguez.dev",
+                          children: "keyboard97.netlify.app",
                         },
                       },
                     ],
@@ -182,7 +175,7 @@ export const GET: APIRoute = async ({ params }) => {
           },
         ],
       },
-    },
+    } as any,
     {
       width: 1200,
       height: 630,
