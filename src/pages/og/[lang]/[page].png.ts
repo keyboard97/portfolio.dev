@@ -1,6 +1,6 @@
 import type { APIRoute, GetStaticPaths } from "astro";
 import { readFile } from "node:fs/promises";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
 import satori from "satori";
 
@@ -42,12 +42,10 @@ let fontCache: { regular: Buffer; bold: Buffer } | null = null;
 
 async function getFonts() {
   if (fontCache) return fontCache;
-  const base = fileURLToPath(
-    new URL("../../../../node_modules/@fontsource/inter/files/", import.meta.url)
-  );
+  const base = join(process.cwd(), "node_modules/@fontsource/inter/files/");
   const [regular, bold] = await Promise.all([
-    readFile(base + "inter-latin-400-normal.woff"),
-    readFile(base + "inter-latin-700-normal.woff"),
+    readFile(join(base, "inter-latin-400-normal.woff")),
+    readFile(join(base, "inter-latin-700-normal.woff")),
   ]);
   fontCache = { regular, bold };
   return fontCache;
