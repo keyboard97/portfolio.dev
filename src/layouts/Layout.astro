@@ -52,6 +52,33 @@ const lang = Astro.currentLocale ?? "en";
     <main class="h-full w-full">
       <slot />
     </main>
+    <footer class="w-full mt-8 py-8 relative rounded-t-lg bg-hover-bg-color backdrop-blur-md" >
+      <div class="max-w-4xl mx-auto px-6 flex items-center justify-center gap-12 flex-wrap">
+        <img
+          src="/logo_xunta.png"
+          alt="Xunta de Galicia"
+          class="h-10 object-contain"
+          style="filter: brightness(0) invert(1) opacity(0.85);"
+        />
+        <img
+          src="/xacobeo-2027_logo.png"
+          alt="Xacobeo 2027"
+          class="h-10 object-contain opacity-85"
+        />
+        <img
+          src="/logo_eu.png"
+          alt="Cofinanciado pola Unión Europea"
+          class="h-10 object-contain"
+          style="filter: brightness(1.1) saturate(1.1) opacity(0.9);"
+        />
+        <img
+          src="/logo_fondos.png"
+          alt="Fondos Europeos"
+          class="h-10 object-contain"
+          style="filter: brightness(0) invert(1) opacity(0.85);"
+        />
+      </div>
+    </footer>
     <FollowMouseEffect />
   </body>
 </html>
