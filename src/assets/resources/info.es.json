@@ -26,10 +26,10 @@
     {
       "start_date": "10/2022",
       "end_date": "presente",
-      "title": "Napptilus Tech Labs",
+      "title": "EXPRO",
       "position": "Desarrollador Fullstack",
       "description": "Trabajo en el desarrollo de plataformas webs para startups, entre ellas StageInHome que mediante técnicas de Machine Learning permitirá transformar automáticamente espacios vacíos o anticuados en estancias acogedoras y atractivas.",
-      "link": "https://napptilus.com/",
+      "link": "https://expro.ad",
       "badges": [
         "HTML",
         "Typescript",
@@ -62,7 +62,7 @@
   ],
   "projects": [
     {
-      "name": "Página de inicio de StageInHome • Napptilus",
+      "name": "Página de inicio de StageInHome • EXPRO",
       "link": "https://stageinhome.com/",
       "description": "Desarrollo de la página de inicio para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
       "image": "/project-images/stageinhome.webp",
@@ -71,7 +71,7 @@
       "pinned": true
     },
     {
-      "name": "Aplicación StageInHome • Napptilus",
+      "name": "Aplicación StageInHome • EXPRO",
       "link": "https://app.stageinhome.com/",
       "description": "Desarrollo de la aplicación para la startup StageInHome. Te permite transformar espacios vacíos o desactualizados en habitaciones acogedoras y atractivas.",
       "image": "/project-images/app.stageinhome.webp",
@@ -90,7 +90,7 @@
       "pinned": true
     },
     {
-      "name": "Ai Art Generator • Napptilus",
+      "name": "Ai Art Generator • EXPRO",
       "link": "https://artgeneratorai.art/",
       "description": "Desarrollo de una aplicación web que permite generar imágenes a partir de una IA, brindando la posibilidad de imprimir las imágenes en lienzo.",
       "image": "/project-images/artgenerator.webp",
@@ -108,7 +108,7 @@
       "pinned": true
     },
     {
-      "name": "TracksCO2 app de monitorización • Napptilus",
+      "name": "TracksCO2 app de monitorización • EXPRO",
       "link": "https://app.monitoring.tracksco2.com/",
       "description": "Desarrollo de una aplicación web que muestra la evolución de los niveles de CO2 en una ubicación dada, obteniendo todos los datos y parámetros de la ubicación.",
       "image": "/project-images/tracksCO2.monitoring.webp",
