@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import ChangeLanguage from "../components/ChangeLanguage";
 import FollowMouseEffect from "../components/FollowMouseEffect.astro";
 import SEO from "../components/SEO.astro";
@@ -36,7 +36,7 @@ const lang = Astro.currentLocale ?? "en";
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <ViewTransitions />
+    <ClientRouter />
 
     <script>
       import posthog from "posthog-js";
